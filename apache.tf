@@ -42,7 +42,7 @@ resource "aws_instance" "apache" {
   ami           = "ami-00785f4835c6acf64"
   instance_type = "t2.micro"
   #  vpc_id = "aws_vpc.dev-vpc.id"
-  subnet_id = "subnet-0dbe3783651cd7e3c"
+  subnet_id = "subnet-0bf6c7e07d3445cc5"
   vpc_security_group_ids = [aws_security_group.dev-apache.id]
 #  key_name  = ${aws_key_pair.dev.id}
 
