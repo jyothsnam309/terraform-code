@@ -44,7 +44,7 @@ resource "aws_instance" "apache" {
   #  vpc_id = "aws_vpc.dev-vpc.id"
   subnet_id = "subnet-0dbe3783651cd7e3c"
   vpc_security_group_ids = [aws_security_group.dev-apache.id]
-  key_name  = "${aws_key_pair.dev.id}"
+#  key_name  = ${aws_key_pair.dev.id}
 
   tags = {
     Name = "dev-apache"
